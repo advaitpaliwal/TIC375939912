@@ -1,0 +1,15 @@
+base exptime=1800s n=10 FPP 0.04904 +/- 0.00157 [0.04540,0.05141]  NFPP 0.006886 +/- 0.000148  n_stars 221 depth 762.3ppm
+   scenarios(mean): BEB=0.00042 BEBx2P=0.00016 BTP=0.00012 DEB=0.00000 DEBx2P=0.00000 DTP=0.00605 EB=0.00000 EBx2P=0.00001 NEB=0.00662 NEBx2P=0.00027 NTP=0.00000 PEB=0.00000 PEBx2P=0.00000 PTP=0.16024 SEB=0.00000 SEBx2P=0.00002 STP=0.04143 TP=0.78467
+   non-target star rows in probs: 8 stars, 24 rows; rows with prob>0: 24; stars with nonzero NEB/NTP prob: 8
+loc exptime=1800s n=10 FPP 0.04245 +/- 0.00151 [0.03887,0.04462]  NFPP 0.000000 +/- 0.000000  n_stars 198 depth 762.3ppm
+   scenarios(mean): BEB=0.00042 BEBx2P=0.00016 BTP=0.00012 DEB=0.00000 DEBx2P=0.00000 DTP=0.00609 EB=0.00000 EBx2P=0.00001 PEB=0.00000 PEBx2P=0.00000 PTP=0.16135 SEB=0.00000 SEBx2P=0.00002 STP=0.04171 TP=0.79011
+   non-target star rows in probs: 0 stars, 0 rows; rows with prob>0: 0; stars with nonzero NEB/NTP prob: 0
+loc_molusc exptime=200s n=3 FPP 0.00721 +/- 0.00102 [0.00605,0.00798]  NFPP 0.000000 +/- 0.000000  n_stars 198 depth 762.3ppm
+   scenarios(mean): BEB=0.00080 BEBx2P=0.00028 BTP=0.00021 DEB=0.00000 DEBx2P=0.00000 DTP=0.00654 EB=0.00000 EBx2P=0.00000 PEB=0.00000 PEBx2P=0.00000 PTP=0.15128 SEB=0.00000 SEBx2P=0.00001 STP=0.00592 TP=0.83496
+   non-target star rows in probs: 0 stars, 0 rows; rows with prob>0: 0; stars with nonzero NEB/NTP prob: 0
+loc_molusc exptime=600s n=3 FPP 0.00677 +/- 0.00101 [0.00563,0.00756]  NFPP 0.000000 +/- 0.000000  n_stars 198 depth 762.3ppm
+   scenarios(mean): BEB=0.00066 BEBx2P=0.00023 BTP=0.00018 DEB=0.00000 DEBx2P=0.00000 DTP=0.00656 EB=0.00000 EBx2P=0.00000 PEB=0.00000 PEBx2P=0.00000 PTP=0.15075 SEB=0.00000 SEBx2P=0.00001 STP=0.00569 TP=0.83592
+   non-target star rows in probs: 0 stars, 0 rows; rows with prob>0: 0; stars with nonzero NEB/NTP prob: 0
+loc_molusc exptime=1800s n=10 FPP 0.00752 +/- 0.00190 [0.00479,0.01086]  NFPP 0.000000 +/- 0.000000  n_stars 198 depth 762.3ppm
+   scenarios(mean): BEB=0.00044 BEBx2P=0.00017 BTP=0.00013 DEB=0.00000 DEBx2P=0.00000 DTP=0.00644 EB=0.00000 EBx2P=0.00001 PEB=0.00000 PEBx2P=0.00000 PTP=0.14865 SEB=0.00002 SEBx2P=0.00001 STP=0.00675 TP=0.83739
+   non-target star rows in probs: 0 stars, 0 rows; rows with prob>0: 0; stars with nonzero NEB/NTP prob: 0

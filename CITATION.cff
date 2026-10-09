@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this candidate, its ephemeris or this code, please cite this record."
+title: "TIC 375939912.01: a 2.06 Earth-radius, 4.30-day transiting planet candidate around the K dwarf TYC 525-1773-1"
+type: dataset
+authors:
+  - family-names: Paliwal
+    given-names: Advait
+    email: advaitpaliwal@gmail.com
+version: "1.0"
+date-released: "2026-10-09"
+license: CC-BY-4.0
+repository-code: "https://github.com/advaitpaliwal/TIC375939912"
+url: "https://github.com/advaitpaliwal/TIC375939912"
+abstract: >-
+  A transit-like signal on TIC 375939912 (TYC 525-1773-1), a K dwarf at 84.5 pc,
+  discovered on 2026-10-09 in TESS full-frame-image photometry from Sectors 55
+  and 82. Period 4.3003975 d, reference mid-transit BJD_TDB 2460542.81698,
+  depth 868 ppm, duration 2.43 h and radius 2.06 Earth radii. False-positive
+  probability 0.0075 +/- 0.0019 with pixel exclusions and MOLUSC Gaia limits.
+  No high-resolution imaging exists, so this is a strong planet candidate,
+  not a validated planet.
+keywords:
+  - exoplanet
+  - transit
+  - TESS
+  - planet candidate
+  - TIC 375939912

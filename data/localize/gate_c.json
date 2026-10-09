@@ -1,0 +1,11 @@
+{
+  "tic": 375939912,
+  "target_source": "1737322384427045760",
+  "n_neighbors": 23,
+  "sectors": 2,
+  "minimum_sum": 29.22985012143775,
+  "neighbors_preferred_in_sum": 0,
+  "neighbors_below25": 0,
+  "neighbors_preferred_any_sector": 0,
+  "passed": true
+}

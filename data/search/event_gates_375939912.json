@@ -1,0 +1,66 @@
+{
+  "tic": 375939912,
+  "P": 4.300336864213205,
+  "T0": 2798.8583594995516,
+  "duration_d": 0.08188178351982481,
+  "baseline_halfwidth_d": 0.5,
+  "threshold_sigma": 3,
+  "issues": [],
+  "measurements": {
+    "spoc_S55_raw": {
+      "depth_ppm": 833.7768517680059,
+      "err_ppm": 281.6350700709078,
+      "n_events": 5
+    },
+    "spoc_S55_corrected": {
+      "depth_ppm": 831.6586524614579,
+      "err_ppm": 130.202312698105,
+      "n_events": 5
+    },
+    "qlp_S55_raw": {
+      "depth_ppm": 714.9818387355734,
+      "err_ppm": 160.0356946542883,
+      "n_events": 3
+    },
+    "qlp_S55_corrected": {
+      "depth_ppm": 612.6268587430154,
+      "err_ppm": 153.64226219607923,
+      "n_events": 3
+    },
+    "spoc_S82_raw": {
+      "depth_ppm": 839.2884901893275,
+      "err_ppm": 86.35011846779612,
+      "n_events": 6
+    },
+    "spoc_S82_corrected": {
+      "depth_ppm": 808.0970004264382,
+      "err_ppm": 131.08721719813016,
+      "n_events": 6
+    },
+    "qlp_S82_raw": {
+      "depth_ppm": 925.086799171255,
+      "err_ppm": 140.94562088093656,
+      "n_events": 6
+    },
+    "qlp_S82_corrected": {
+      "depth_ppm": 896.9320984141515,
+      "err_ppm": 112.79383418075632,
+      "n_events": 6
+    }
+  },
+  "gate_a": {
+    "spoc_S55_disagreement_sigma": 0.00682683146810379,
+    "qlp_S55_disagreement_sigma": 0.46137045911671476,
+    "spoc_S82_disagreement_sigma": 0.19870737705350475,
+    "qlp_S82_disagreement_sigma": 0.15596289279002723,
+    "pass": true,
+    "reasons": []
+  },
+  "gate_b": {
+    "S55_disagreement_sigma": 1.0875913672585154,
+    "S82_disagreement_sigma": 0.5136924564587854,
+    "pass": true,
+    "reasons": []
+  },
+  "stopped_at": null
+}
