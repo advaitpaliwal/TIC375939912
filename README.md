@@ -4,9 +4,9 @@ Discovered by Advait Paliwal on 2026-10-09 in public TESS full-frame-image photo
 
 ## Summary
 
-TIC 375939912 (TYC 525-1773-1) is a K dwarf at 84.5 pc. TESS full-frame-image photometry from Sectors 55 and 82 shows a transit-like signal with period 4.3003975 d, depth 868 ppm and duration 2.43 h, implying a radius of 2.06 R⊕. The signal appears in raw and corrected flux, with consistent depths in TESS-SPOC and QLP. Difference images exclude all 23 Gaia neighbours within 60″ as its source. As of 2026-10-09, the star is not a TOI or CTOI.
+TIC 375939912 (TYC 525-1773-1) is a K dwarf at 84.5 pc. TESS full-frame-image photometry from Sectors 55 and 82 shows a transit-like signal with period 4.3003975 d, depth 868 ppm and duration 2.43 h, implying a radius of 2.06 R⊕. The signal appears in raw and corrected flux, with consistent depths in TESS-SPOC and QLP. Difference images in both sectors favour the target over each of the 23 Gaia sources within 60″. As of 2026-10-09, the star is not a TOI or CTOI.
 
-With pixel exclusions and MOLUSC Gaia companion limits, TRICERATOPS gives a false-positive probability of **0.0075 ± 0.0019**, below the 0.015 statistical-validation threshold. No high-resolution imaging exists, and unresolved companions remain possible. **This is a strong planet candidate, not a validated or confirmed planet.**
+With MOLUSC Gaia companion limits and no neighbours removed, TRICERATOPS gives a false-positive probability of **0.034 ± 0.002** and NFPP 0.028 at the fitted depth (Revision 1, below). This is above the 0.015 validation threshold. No high-resolution imaging exists. **Status: planet candidate.**
 
 | Parameter | Value |
 |---|---|
@@ -20,14 +20,27 @@ With pixel exclusions and MOLUSC Gaia companion limits, TRICERATOPS gives a fals
 | Transit duration | 2.43 h |
 | Candidate radius | 2.06 (+0.19 / −0.18) R⊕ |
 | Equilibrium temperature | about 897 K |
-| False-positive probability | 0.0075 ± 0.0019 with pixel exclusions and Gaia limits |
+| False-positive probability | 0.034 ± 0.002, NFPP 0.028 (no neighbours removed, fitted depth; Revision 1) |
 
-The symmetric period and epoch errors above use the larger side of the fitted interval. Full asymmetric intervals and convergence diagnostics are in `data/fit/result.json`. The false-positive probability is conditional on the adopted model and constraints; its quoted scatter is across ten runs. The false-positive runs used the search depth of 762.3 ppm, while the later transit fit gives 868 ppm; see `data/fpp/trc_summary.txt`.
+The symmetric period and epoch errors above use the larger side of the fitted interval. Full asymmetric intervals and convergence diagnostics are in `data/fit/result.json`. The false-positive probability is conditional on the adopted model and constraints; its quoted scatter is across ten runs. The version 1.0 false-positive runs in `data/fpp/` used the search depth of 762.3 ppm; Revision 1 replaces them with runs at the fitted 868 ppm.
+
+## Revision 1 (2026-10-16)
+
+The research note was revised in response to the journal editor. The corrected numbers are:
+
+- **False-positive probability, no neighbours removed:** FPP = 0.0337 ± 0.0018 (ten runs, range 0.0308–0.0368) and NFPP = 0.0281 ± 0.0008, with TRICERATOPS given the fitted depth of 868 ppm and the wotan-detrended light curve folded on the fitted ephemeris (`revision1/fpp_fitdepth/summary.json`). All 220 neighbours are kept. The version 1.0 value of 0.0075 ± 0.0019 depended on removing neighbours and on the shallower search depth, and is withdrawn.
+- **NFPP carriers:** TIC 375939920 (59%, 43.8″) and TIC 375939917 (41%, 35.2″). The difference images disfavour them by summed Δχ² of 60.5 and 58.3, and by at least 21.0 in each sector.
+- **Removing only those two** (following Giacalone et al. 2021): FPP = 0.0058 ± 0.0017 (range 0.0033–0.0086), NFPP = 7.4 × 10⁻⁶ (`revision1/fpp_rule/summary.json`). This rests on TESS pixels, not on ground-based photometry, so no validation is claimed.
+- **MOLUSC:** only its Gaia RUWE and contrast tests were used (no imaging); 200,000 companions generated, 52% kept.
+- **Figure 1** now has three panels: folded, unfolded Sector 82 with the trend, and four single transits (`revision1/figure1_combined_TIC375939912.png`).
+
+Every change, with its source, is listed in [`revision1/CHANGES.md`](revision1/CHANGES.md). The revised note text is with the journal and is not included here.
 
 ## Contents
 
 - [Research note](note/TIC375939912_note.md): methods, results, limitations and references.
 - [Figure 1](note/figure1_TIC375939912.png): folded TESS-SPOC photometry, transit model and residuals.
+- `revision1/`: Revision 1 figure, the new false-positive runs (scripts, per-run outputs and summaries) and `CHANGES.md`.
 - [Ephemeris](ephemeris.csv): 104 predicted mid-transits from 2026-10-10 through 2027-12-31, with BJD_TDB, geocentric UTC and 1σ uncertainty.
 - `code/fit/`: transit fit, preparation, posterior analysis and odd/even scripts.
 - `code/fpp/`: companion-limit and false-positive scripts, without third-party packages.
